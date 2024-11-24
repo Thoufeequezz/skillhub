@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Offered</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffbb75, #ffa05a);
+            color: #fff;
+            padding: 20px;
+        }
+
+        #hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #ff6d3a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #hero button:hover {
+            background: #ff914d;
+        }
+
+        #courses {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #courses h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .course {
+            background: linear-gradient(135deg, #ff6d3a, #ff914d);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            color: white;
+        }
+
+        .course:hover {
+            transform: scale(1.05);
+        }
+
+        .course img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .course h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .course p {
+            font-size: 14px;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 800px) {
+            .course {
+                width: calc(45% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .course {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Learn New Skills, Online Anytime</h2>
+        <p>Start, switch, or advance your career with courses from top instructors and universities.</p>
+        <button onclick="alert('Enrollment Form Coming Soon!')">Enroll Now</button>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+
+        <h3>Technology & Programming</h3>
+        <div class="course-list">
+            <div class="course">
+                <img src="images/webdev.webp" alt="Web Development" onclick="window.location.href='fullstack1.html'">
+                <h3>Full Stack Development</h3>
+                <p>Gain expertise in both front-end and back-end technologies to create complete web applications.</p>
+            </div>
+            <div class="course">
+                <img src="images/game Deveopment" alt="Data Science">
+                <h3>Game Development</h3>
+                <p>Learn to design, develop, and publish engaging video games using industry-standard tools and programming languages</p>
+            </div>
+            <div class="course">
+                <img src="images/Ai and Machine Learning.jpg" alt="Machine Learning">
+                
+
+                <h3>Data Science & Machine Learning</h3>
+                <p>Discover data science fundamentals and machine learning techniques to analyze and interpret data.</p>
+            </div>
+        </div>
+
+        <h3>Business & Management</h3>
+        <div class="course-list">
+            <div class="course">
+                <img src="images/Digital Marketing.jpg" alt="Digital Marketing" >
+                <h3>Digital Marketing</h3>
+                <p>Master strategies for online marketing.</p>
+            </div>
+            <div class="course">
+                <img src="images/Entroprenuarship.jpg" alt="Entrepreneurship">
+                <h3>Entrepreneurship & Startups</h3>
+                <p>Learn to launch and grow successful startups from concept to market</p>
+            </div>
+            <div class="course">
+                <img src="images/Leadership And Time managemenet" alt="Leadership">
+                <h3>Leadership & Team Management</h3>
+                <p>Develop essential leadership skills and strategies to effectively manage teams and drive organizational success.</p>
+            </div>
+        </div>
+
+        <h3>Creative Skills</h3>
+        <div class="course-list">
+            <div class="course">
+                <img src="images/UI UX Designs 121.png" alt="UI/UX Design">
+                <h3>UI/UX Design</h3>
+                <p>Create user-friendly interfaces.</p>
+            </div>
+            <div class="course">
+                <img src="images/Video Editing.avif" alt="Video Editing">
+                <h3>Video Editing</h3>
+                <p>Learn the basics of video editing.</p>
+            </div>
+            <div class="course">
+                <img src="images/Graphic design 121" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+                <p>Master the fundamentals of graphic design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <script src="ad.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/26/19/20241026190011-TOU2M79G.js"></script>
+</body>
+</html>

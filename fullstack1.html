@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development Course</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff2a00a2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .progress {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+       #course-content h2,p{
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #ff0000;
+            width: 0%; /* Initial width */
+            border-radius: 5px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #ff0000;
+        }
+
+        .quiz-section {
+            margin-top: 20px;
+        }
+
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .discussion {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .discussion h3 {
+            margin-bottom: 10px;
+        }
+
+        .discussion textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .discussion button {
+            width: 100%;
+            background-color: #ef893b;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-container h3{
+            margin-bottom: 10px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .roadmap {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .roadmap img {
+            width: 100%; /* Responsive */
+            max-width: 800px; /* Maximum width */
+            border-radius: 5px;
+        }
+        #quiz-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        #quiz-result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #35424a;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #3c4a54;
+        }
+        .aditional{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .aditional iframe{
+            margin-bottom: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Full Stack Development Course</h1>
+    </header>
+
+    <main>
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar"></div> <!-- Video progress -->
+        </div>
+
+        <section id="course-content">
+            <h2>Course Content</h2>
+            <p>This course covers everything you need to know about full-stack development, including:</p>
+            <ul>
+                <li>HTML, CSS, and JavaScript Basics</li>
+                <li>Frontend Frameworks (React, Angular)</li>
+                <li>Backend Technologies (Node.js, Express)</li>
+                <li>Databases (MongoDB, SQL)</li>
+                <li>APIs and RESTful Services</li>
+            </ul>
+        </section>
+
+        <section class="video-container">
+            <h3>Course Videos</h3>
+           
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=qLpp9Uj14-s1aFge&amp;list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+        </section>
+
+        <section class="quiz-section">
+            <h3>Interactive Quizzes</h3>
+            <div id="quiz-container">
+                <h3>Full Stack Development Quiz</h3>
+                <div id="quiz-questions"></div>
+                <button id="submit-quiz">Submit Quiz</button>
+                <div id="quiz-result" style="display:none;"></div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h3>Student Testimonials</h3>
+            <blockquote>"This course has changed my life! I now feel confident in my full stack skills!"</blockquote>
+            <cite>Abdul Ahad</cite>
+        </section>
+
+        <section class="discussion">
+            <h3>Discussion Forum</h3>
+            <textarea placeholder="Share your thoughts or questions..."></textarea>
+            <button>Post</button>
+        </section>
+
+        <section class="">
+            <h3>Additional Resources</h3>
+            <p>Check out the following playlists and roadmaps:</p>
+            <ul class="aditional">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=qLpp9Uj14-s1aFge&amp;list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0CC6R5VmgLXJkBdA&amp;list=PLSDeUiTMfxW6VChKWb26Z_mPR4f6fAmMV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <li><a href=images/full-stack (1) (1).pdf">Download Roadmap PDF</a></li>
+            </ul>
+        </section>
+
+        <section class="roadmap">
+            <h3>Course Roadmap</h3>
+            <img src="images/Full Stack Development.jpg" alt="Roadmap Image">
+            <p>Stay on track with our detailed roadmap designed to guide you through the course.</p>
+        </section>
+    </main>
+
+
+    <script>
+        // Video progress tracking
+        const video = document.getElementById('course-video');
+        const progressBar = document.getElementById('progress-bar');
+
+        video.addEventListener('timeupdate', () => {
+            const percentage = (video.currentTime / video.duration) * 100;
+            progressBar.style.width = percentage + '%';
+        });
+
+        function checkAnswer(isCorrect) {
+            if (isCorrect) {
+                alert("Correct Answer!");
+            } else {
+                alert("Try Again!");
+            }
+        }
+    </script>
+    <script>
+        const quizData = [
+            {
+                question: "What does HTML stand for?",
+                a: "Hyper Text Markup Language",
+                b: "High Text Markup Language",
+                c: "Hyperlink and Text Markup Language",
+                d: "None of the above",
+                correct: "a"
+            },
+            {
+                question: "Which of the following is a JavaScript framework?",
+                a: "Django",
+                b: "Flask",
+                c: "React",
+                d: "Ruby on Rails",
+                correct: "c"
+            },
+            {
+                question: "Which HTML attribute is used to define inline styles?",
+                a: "styles",
+                b: "class",
+                c: "style",
+                d: "font",
+                correct: "c"
+            },
+            {
+                question: "What is the main purpose of CSS?",
+                a: "To structure web pages",
+                b: "To style web pages",
+                c: "To store data",
+                d: "To create server-side applications",
+                correct: "b"
+            },
+            {
+                question: "Which database is commonly used with Node.js?",
+                a: "MongoDB",
+                b: "MySQL",
+                c: "PostgreSQL",
+                d: "SQLite",
+                correct: "a"
+            }
+        ];
+
+        // Function to load the quiz
+        function loadQuiz() {
+            const quizQuestions = document.getElementById('quiz-questions');
+            quizData.forEach((data, index) => {
+                const questionElement = document.createElement('div');
+                questionElement.className = "question";
+                questionElement.innerHTML = `
+                    <h4>${index + 1}. ${data.question}</h4>
+                    <label><input type="radio" name="question${index}" value="a"> ${data.a}</label><br>
+                    <label><input type="radio" name="question${index}" value="b"> ${data.b}</label><br>
+                    <label><input type="radio" name="question${index}" value="c"> ${data.c}</label><br>
+                    <label><input type="radio" name="question${index}" value="d"> ${data.d}</label><br>
+                `;
+                quizQuestions.appendChild(questionElement);
+            });
+        }
+
+        // Function to submit the quiz
+        function submitQuiz() {
+            let score = 0;
+            quizData.forEach((data, index) => {
+                const answer = document.querySelector(`input[name="question${index}"]:checked`);
+                if (answer && answer.value === data.correct) {
+                    score++;
+                }
+            });
+            const result = document.getElementById('quiz-result');
+            result.style.display = 'block';
+            result.innerHTML = `You scored ${score} out of ${quizData.length}`;
+        }
+
+        // Load the quiz when the page loads
+        loadQuiz();
+
+        // Add event listener to submit button
+        document.getElementById('submit-quiz').addEventListener('click', submitQuiz);
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/26/19/20241026190011-TOU2M79G.js"></script>
+</body>
+</html>

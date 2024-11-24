@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Education & Work Opportunities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            background-image: linear-gradient(120deg, #a683606d, #ff9f5a68);
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            color: #fff;
+        }
+
+        .section h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .section.education {
+            background-image: linear-gradient(135deg, #ffb347, #ffcc80);
+        }
+
+        .section.work {
+            background-image: linear-gradient(135deg, #ff914d, #ff6d3a);
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section education" onclick="window.location.href='coursepro.html'">
+            <h2>Join Our Education Program</h2>
+            <p>Our platform offers over 400 courses across fields like Technology, Business, and Creative Skills, plus Industry Projects guided by experts, where AI-matched teams tackle real-world challenges. Learn, collaborate, and grow your career with us!</p>
+        </div>
+        <div class="section work" onclick="window.location.href='workoper.html'">
+            <h2>Join Our Work Opportunities</h2>
+            <p>Our platform provides two pathways to advance your career: an Education Program with 400+ courses in Technology, Business, and Creative Skills, and Industry Projects where you collaborate with AI-matched peers on real-world challenges. Equip yourself for growth and success!</p>
+        </div>
+    </div>
+
+</body>
+</html>

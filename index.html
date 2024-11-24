@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c9ba9be884.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/LOGO MAIN.jpg" class="logo" >
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skill Sectors</a></li>
+                <li><a href="#portfolio">Project Sectors</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button class="sign-in-button" onclick="window.location.href='newsign.html'">Sign In</button>
+                <button class="sign-out-button" onclick="window.location.href='twosection.html'">Skip</button>
+                <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+             <h1>"HI, STUDENTS<br> <span>ARE YOU READY</span><br>LET'S START"</h1>
+        </div>
+    </div>
+<!--------------about--------------->
+
+   </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Graphic Designer.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">WHY <span>SKILL HUB</span>?</h1>
+                <br>
+                <br>
+                <p class="text"><p>Welcome to Skill-HUB, a dedicated platform focused on empowering students who are eager to improve their skills and succeed in their future careers. We recognize that many students are passionate about skill development but may feel unsure about where to start. Our mission is to bridge that gap by providing a comprehensive educational experience tailored to your needs.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Learn Through</p>
+                    <p class="tab-links" onclick="opentab('experience')">Real Time Projects Works</p>
+                    
+                </div>
+                <!-- SKILLS, EDUCATION ,EXPERIENCE -->
+                <div class="tab-contents active-tab" id="skills" >
+                    <ul>
+                        <li><span>Guided Roadmaps</span><br>Our expertly designed roadmaps outline essential skills and resources, providing a clear pathway for students to navigate their learning journey with confidence.</li>
+                        <li><span>Recorded Video Lessons</span><br>
+                            Get access to high-quality, recorded video lessons covering the entire syllabus in an easy-to-follow format. Each video is crafted by experts, ensuring you understand key concepts and gain the knowledge you need, anytime and at your own pace.</li>
+                        <li><span>Learning Through Play</span><br>We believe that education should be engaging and enjoyable! Our platform integrates gamified learning experiences, allowing students to develop their skills while playing interactive games that reinforce key concepts</li>
+                        <li><span>Advanced AI Chatbot for Doubt Clearance</span><br>Have questions? Our advanced AI chatbot is available 24/7 to offer instant support and clarify any doubts you may have, ensuring you get real-time answers and guidance whenever you need it.</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mentorship Opportunities</span><br> Connect with experienced mentors who can guide you through your learning process. Our mentors are industry professionals passionate about helping students succeed, offering valuable insights from their own experiences</li>
+                        <li><span>Industry-Expert Created Projects</span><br>We provide students with collaborative projects developed by industry experts. These real-world projects not only enhance your skills but also offer practical experience that can be a significant asset in your career</li>
+                        <li><span>Networking and Community</span><br>Join a vibrant community of learners and professionals who share your interests. Connect with peers, share ideas, and collaborate on projects, creating meaningful relationships that support your career growth</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                       
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+
+ <!---------- Services------------ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">UNLOCK SKILLS IN EVERY SKILL SECTOR </h1>
+        <div class="services-list">
+            <div class="card11">
+                <i class="fa-solid fa-palette"></i>
+                <h2>Technology & Programming</h2>
+                <p>Introduction to Web Development (HTML, CSS, JavaScript basics)
+                    Python for Data Science (data analysis, libraries like Pandas and NumPy)
+                    Foundations of Machine Learning (supervised and unsupervised learning)ALso
+                     100+ Courses in this Sector</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="card11">
+                <i class="fa-solid fa-film"></i>
+                <h2>Business & Management</h2>
+                <p>Digital Marketing Essentials (SEO, Google Analytics, social media basics)
+                    Project Management Fundamentals (Agile, Scrum, and PMP basics)
+                    Entrepreneurship 101 (business planning, market research, funding)
+                    50+ Courses in this Sector</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="card11">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Creative Skills</h2>
+                <p>Graphic Design for Beginners (Photoshop, Illustrator basics)
+                    Video Editing Basics (Premiere Pro and DaVinci Resolve)
+                    UI/UX Design Foundations (Figma and Adobe XD)  
+                    50+ Courses in this Sector</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="card11">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Personal Development</h2>
+                <p>Public Speaking and Presentation Skills
+                    Time Management and Productivity Hacks
+                    Emotional Intelligence and Communication
+                    50+ Courses in this Sector</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="card11">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Marketing & Sales</h2>
+                <p>Social Media Marketing Basics (Instagram, Facebook, LinkedIn)
+                    Content Marketing and SEO (blogging, on-page SEO)
+                    Sales Negotiation Skills (communication and persuasion techniques)
+                    50+ Courses in this Sector
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="card11">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Language & Communication</h2>
+                <p>Business English for Non-Native Speakers
+                    Intro to Spanish Language (basic conversational skills)
+                    Writing for Social Media and Content Creation
+                    50+ Courses in this Sector</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- -----portfolio----- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">COLLABRATIVE REAL TIME PROJECTS</h1>
+        <div class="work-list">
+
+            
+            <div class="work">
+                <img src="images/Real-Time Chat Application.png" alt="Graphic Design">
+                <div class="layer">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>Objective: Develop a web-based chat app using WebSockets for instant messaging.
+                        Tools: Node.js, Socket.io, HTML/CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Collaborative Coding Platform.png" alt="Graphic Design">
+                <div class="layer">
+                    <h3>Collaborative Coding Platform</h3>
+                    <p> Objective: Create an online code editor where multiple users can write and execute code together in real-time.
+                        Tools: React, CodeMirror, or Ace Editor, and Node.js for backend.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Live Polling and Survey App.jpg" alt="Graphic Design">
+                <div class="layer">
+                    <h3> Live Polling and Survey App</h3>
+                    <p> 
+                        Objective: Build an application where users can create and respond to polls with live results displayed in real-time.
+                        Tools: Firebase for real-time database, HTML/CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Online Whiteboard Tool.jpg" alt="Graphic Design">
+                <div class="layer">
+                    <h3>Online Whiteboard Tool</h3>
+                    <p> Objective: Develop a virtual whiteboard for brainstorming sessions where users can draw and share ideas in real-time.
+                        Tools: HTML5 Canvas, WebSockets, and a backend like Node.js.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Collaborative Task Management System.png" alt="Video Editing">
+                <div class="layer">
+                    <h3>Collaborative Task Management System</h3>
+                    <p>
+                        Objective: Create a task management app that allows users to add, edit, and assign tasks, with updates reflected in real-time.
+                        Tools: React or Angular, Firebase, and Node.js.
+                        </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Shared Document Editor.png" alt="UI/UX Design">
+                <div class="layer">
+                    <h3>Shared Document Editor</h3>
+                    <p>Objective: Build a document editing application similar to Google Docs, where multiple users can edit and comment simultaneously.
+                        Tools: Quill.js or Draft.js for rich text editing, Firebase for backend.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+          
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+
+  </div>
+
+ <!-- -----------------contact---------------- -->
+ <div id="contact">
+   <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-regular fa-envelope"></i>skillhub@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7034779883</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn2" download>Sign Up</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+
+   </div>
+    <P class="copyright">Copyright © Debuggers. Made with <i class="fa-solid fa-heart"></i> by Team Debuggers</P>
+ </div>
+
+
+ <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+
+ </script>
+ <script>   
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+ </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbymxeORb5bf-KI_8gulBNPH9H2zRruKWmTUZuLxDolCYRYeO54rSB9OWCkLTSQiWIYt/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/10/26/19/20241026190011-TOU2M79G.js"></script>
+
+</body>
+</html>
